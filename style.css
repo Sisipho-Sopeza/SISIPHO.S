@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    font-family: 'nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: bisque;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section{
+    padding: 2rem 9%;
+}
+/**********header***************************/
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+    background:#d3ad7f;
+
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+}
+.header .logo img{
+    height: 6rem;
+    display: block;
+} 
+
+.header .close{
+    display: none;
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block ;
+    padding: 20px;
+    height: 6rem;
+   
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.header .navbar a:hover{
+    color: pink;
+}
+
+.header #menu{
+    display: none;
+}
+
+/*****************************************home****************************************************************/
+.home{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background:  #d3ad7f;
+
+}
+
+.home .content{
+    flex: 1 1 40rem;
+
+}
+
+.home .content .title{
+    font-size: 6rem;
+    color: aqua;
+    text-transform: uppercase;
+}
+
+
+.home .content .title span{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content .description{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem;
+    color: #fff;
+}
+
+.image {
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.image:hover {
+    transform: translateX(10px);
+}
+
+
+.home .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #d3ad7f;
+    background: #f1f8f2;
+    cursor: pointer;
+    
+}
+
+.home .content .btn:hover{
+        letter-spacing: .2rem;
+}
+
+
+.home .image{
+    flex: 1 1 40rem;
+
+}
+
+.home .image .img{
+    width: 100%;
+}
+
+/***********************************************************************************************/
+
+header{
+
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+section{
+    padding: 2em;
+    text-align: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    background:url(icetea/OIP\ 17.jfif),
+    radial-gradient(#d3ad7f,#d3ad7f);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center ;
+}
+section span{
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.tea-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #d3ad7f;
+    background: #f1f8f2;
+    cursor: pointer;
+    
+}
+
+.cta-button:hover {
+    letter-spacing: .2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*******************************************form*************************************************************
+body .form-container {
+    margin: 0;
+    padding: 0;
+    background-color: #d3ad7f;
+    justify-content: center;
+    align-items: center;
+    background: #d3ad7f;
+}
+
+
+.form-container {
+    background-color: #d3ad7f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab.active {
+    background-color:#d3ad7f;
+    color:#fff;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #d3ad7f;
+    background: #f1f8f2;
+    cursor: pointer;
+}
+
+button:hover {
+    letter-spacing: .2rem;
+}
