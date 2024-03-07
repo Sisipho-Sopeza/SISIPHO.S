@@ -163,6 +163,7 @@ section{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center ;
+    border-radius: 10px;
     color: #fff;
 }
 section span{
@@ -199,4 +200,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
