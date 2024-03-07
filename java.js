@@ -1,18 +1,23 @@
-const movingImage = document.getElementById('movingImage');
-let position = 0;
-let direction = 1;
+ // JavaScript for slideshow
+ let currentIndex = 0;
+ const slideContainer = document.getElementById('slide-container');
+ const slides = document.querySelector('.photos');
+ const totalSlides = slides.children.length;
 
-function moveImage() {
-    position += direction;
-    movingImage.style.transform = `translateX(${position}px)`;
+ function showSlide(index) {
+     const newPosition = -index * 100 + '%';
+     slides.style.transform = 'translateX(' + newPosition + ')';
+ }
 
-    if (position >= 20 || position <= 0) {
-        direction *= -1;
-    }
+ function nextSlide() {
+     currentIndex = (currentIndex + 1) % totalSlides;
+     showSlide(currentIndex);
+ }
 
-    requestAnimationFrame(moveImage);
-}
+ function prevSlide() {
+     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+     showSlide(currentIndex);
+ }
 
-moveImage();
-
-
+ // Change slide every 3 seconds
+ setInterval(nextSlide, 3000);

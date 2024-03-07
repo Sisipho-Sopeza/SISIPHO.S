@@ -148,7 +148,7 @@ header{
     color: #fff;
     text-align: center;
     padding: 1em;
-    font-size: 6rem;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -157,16 +157,17 @@ section{
     text-align: center;
     font-size: 6rem;
     text-transform: uppercase;
-    background:url(icetea/OIP\ 17.jfif),
+    background: url(icetea/OIP)
     radial-gradient(#d3ad7f,#d3ad7f);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center ;
+    color: #fff;
 }
 section span{
     text-transform: uppercase;
-    color: aqua;
+    color:#fff;
 }
 
 .tea-image{
@@ -179,7 +180,7 @@ section span{
     display: inline-block;
     padding: .9rem 3rem;
     font-size: 1.7rem;
-    color: #d3ad7f;
+    color: #e7bf8e;
     background: #f1f8f2;
     cursor: pointer;
     
@@ -199,46 +200,3 @@ footer {
     width: 100%;
 }
 
-
-/************************************************MENU**********************************************************************************/
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    background: #d3ad7f;
-}
-
-.menu-item {
-    width: 250px;
-    margin: 20px;
-    text-align: center;
-}
-
-.menu-item img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.item-details {
-    margin-top: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
