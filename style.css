@@ -202,3 +202,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+footer a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+footer a:hover {
+    color: #00bcd4;footer a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    
+    footer a:hover {
+        color: #00bcd4; /* Change to your preferred hover color */
+    }
+}
