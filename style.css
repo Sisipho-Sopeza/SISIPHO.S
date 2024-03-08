@@ -157,12 +157,14 @@ section{
     text-align: center;
     font-size: 6rem;
     text-transform: uppercase;
-    background:url(icetea/OIP.jfif),
+    background:url(icetea/Earl-Grey-Lemon-Vodka-John-Daly-Cocktail-BoulderLocavore.com-0469.v1-eb723bbc39af42468edf437542cb69af.jpg),
     radial-gradient(#d3ad7f,#d3ad7f);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center ;
+    background-size:contain;
+    background-color: azure;
     border-radius: 10px;
     color: #fff;
 }
